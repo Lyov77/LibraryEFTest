@@ -83,7 +83,7 @@ namespace LibraryEFTest.Data.Concrete
         public Author GetAuthorByNameAndSurname(string name, string surname)
         {
             using LibraryDBContext context = new LibraryDBContext();
-            return context.Authors.FirstOrDefault(a => a.Name == name && a.Surname == surname);
+            return context.Authors.FirstOrDefault(a => a.Name == name && a.Surname == surname)!;
         }
 
 
